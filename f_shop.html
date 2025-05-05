@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class=" bg-white" >
+<head>
+    <meta charset="UTF-8" >
+    <meta name="color-scheme" content="light">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              lpink: '#E554731A',
+              dpink: '#E55473',
+              npink: '#fb6f92',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      .lato{
+        font-family: lato;
+      }
+    </style>
+    <title>Document</title>
+</head>
+<body class="lato">
+  <!-- nav -->
+  <div class="navbar bg-[#E85A71] text-white ">
+    <div class="mx-auto lg:w-[75vw] md:w-[85vw] w-[95vw] flex justify-between">
+      <div class="">
+        <a class="btn btn-ghost text-xl p-0">FlowerShop</a>
+      </div>
+      <div class="">
+        <button class="btn btn-square btn-ghost">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            class="inline-block h-5 w-5 stroke-current">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- hero -->
+  <div class="w-full md:aspect-video bg-lpink ">
+    <div class="mx-auto lg:w-[75vw] md:w-[85vw] w-[95vw] h-full flex flex-col md:flex-row md:justify-between items-center">
+      <div class="lg:w-[36.9vw] md:w-[36.9vw] flex flex-col gap-[max(1.667vw,16px)] lg:m-0 md:m-0  m-[8vw] ">
+        <h1 class="text-black text-[clamp(40px,4.16vw,80px)] font-extrabold leading-[clamp(48px,5vw,96px)] ">Let's make beautiful flowers a part of your life.</h1>
+        <p class="text-black text-[clamp(10px,0.94vw,18px)] ">It is a long established fact that a reader will be distracted by the readable content of a 
+          page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less 
+          normal distribution of letters.
+        </p>
+        <button class="btn bg-dpink hover:bg-[#da3853] text-white border-0 text-[clamp(12px,1.042vw,20px)] w-[max(9.22vw,100px)] h-[max(3.4vw,36px)]">Shop Now</button>
+      </div>
+      <div class="h-full flex items-end">
+        <img src="FlowerAsset/pngwing 10.png" alt="" class="lg:w-full md:w-full lg:h-[94%] md:h-[94%] h-[80vw]">
+      </div>
+    </div>   
+  </div> 
+  <!-- card section -->
+  <div class="mx-auto lg:w-[75vw] md:w-[85vw] w-[95vw] flex flex-col justify-center items-center gap-[max(2.5vw,36px)] my-[9.3vw]">
+    <!-- text -->
+    <div class="lg:w-[31vw] w-[65vw] text-center gap-[max(1.25vw,16px)]">
+      <h1 class=" text-[clamp(28px,2.1vw,40px)] text-black font-[800]">Our Featured Flowers</h1>
+      <p class="text-[clamp(10px,0.94vw,18px)]">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+    </div>
+    <!-- card parent -->
+    <div class=" mx-auto w-fit md:w-full flex flex-col md:flex-row justify-between  md:gap-0 gap-10">
+      <!-- card1 -->
+      <div class="text-center flex flex-col gap-[max(1.6vw,18px)]">
+        <div class="md:w-[24.1vw] md:h-[28vw] w-[60.25vw] h-[70vw] md:rounded-t-[15.6vw] bg-[#A7216226] rounded-t-[39vw] flex flex-col justify-end items-center">
+          <img src="FlowerAsset/pngwing 6.png" alt="" class=" w-[67%]">
+        </div>
+        <p class="text-black text-[clamp(16px,1.25vw,24px)] font-[700] underline ">Pink Flower Tree </p>
+      </div>
+      <!-- card2 -->
+      <div class="text-center flex flex-col gap-[max(1.6vw,18px)]">
+        <div class="md:w-[24.1vw] md:h-[28vw] w-[60.25vw] h-[70vw] md:rounded-t-[15.6vw] bg-[#0597A026] rounded-t-[39vw] flex flex-col justify-center items-center">
+          <img src="FlowerAsset/pngwing 5.png" alt="" class="w-[79%]">
+        </div>
+        <p class="text-black text-[clamp(16px,1.25vw,24px)] font-[700] underline ">Pink Flower Tree </p>
+      </div>
+      <!-- card3 -->
+      <div class="text-center flex flex-col gap-[max(1.6vw,18px)]">
+        <div class="md:w-[24.1vw] md:h-[28vw] w-[60.25vw] h-[70vw] md:rounded-t-[15.6vw] bg-[#477D1126] rounded-t-[39vw] flex flex-col justify-end items-center">
+          <img src="FlowerAsset/pngwing 7.png" alt="" class=" w-[67%]">
+        </div>
+        <p class="text-black text-[clamp(16px,1.25vw,24px)] font-[700] underline ">Pink Flower Tree </p>
+      </div>
+    </div>
+  </div>
+    <!--contact  -->
+  <div class=" md:w-[85vw] lg:w-[75vw] lg:h-[16.67vw] flex flex-col md:flex-row justify-around items-center gap-12 bg-[#2727270D] mx-auto lg:p-0 p-16 my-16 lg:my-0">
+    <!-- 1 -->
+    <div class=" flex flex-col items-center gap-[max(1.25vw,16px)] ">
+      <img src="FlowerAsset/Group 57.png" alt="" class="h-[60%]">
+      <p class="text-black text-[clamp(16px,1.25vw,24px)] font-[600] text-center">Same Day Delivery. Click & Collect.</p>
+    </div>
+    <!-- 2 -->
+    <div class="flex flex-col items-center gap-[max(1.25vw,16px)]">
+      <img src="FlowerAsset/Group 58.png" alt="" class="h-[60%]">
+      <p class="text-black text-[clamp(16px,1.25vw,24px)] font-[600]">Fresh Flowers. Local Growers.</p>
+    </div>
+    <!-- 3 -->
+    <div class="flex flex-col items-center gap-[max(1.25vw,16px)]">
+      <img src="FlowerAsset/Group 59.png" alt="" class="h-[60%]">
+      <p class="text-black text-[clamp(16px,1.25vw,24px)] font-[600]">24/7 Free Support.</p>
+    </div>
+  </div>
+   <!--25% discount  -->
+  <div class=" w-full lg:h-[32.3vw] bg-[#E554730D] flex flex-col-reverse lg:flex-row justify-center items-center gap-[max(9.7vw,50px)] lg:my-[6.67vw] my-14 lg:p-0 p-10">
+    <!-- text -->
+    <div class="lg:w-[31vw] w-[65vw] text-center flex flex-col items-center gap-[max(1.6vw,18px)]">
+      <h1 class="text-[clamp(28px,2.1vw,40px)] text-black font-[800]">Hot Deal ! Sale Up To 25% <span class="text-[#E55473]">Off</span></h1>
+      <p class="text-[clamp(10px,0.94vw,18px)]">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+      <button class="btn bg-dpink text-white border-0 text-[clamp(12px,1.042vw,20px)] w-[max(9.22vw,100px)] h-[max(3.4vw,36px)]">Sign Up</button>
+    </div>
+    <!-- img -->
+    <div class="h-[68%]">
+      <img src="FlowerAsset/pngwing 8.png" alt="" class="h-[100%]">
+    </div>
+  </div> 
+  <!-- section 5 -->
+  <div class=" mx-auto w-[75vw] flex flex-col items-center gap-[max(2.5vw,36px)] ">
+    <!-- text -->
+    <div class="lg:w-[31vw] w-[65vw] flex flex-col text-center gap-[max(1.6vw,18px)]">
+      <h1 class="text-[clamp(28px,2.1vw,40px)] text-black font-[800]">Instagram</h1>
+      <p class="text-[clamp(10px,0.94vw,18px)]">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+    </div>
+    <!-- imgs parent -->
+    <div class=" lg:h-[20.62vw]lg:w-[75vw] w-fit grid grid-cols-2 lg:grid-cols-4 lg:gap-[0.8vw] gap-[1.6vw] ">
+      <img src="FlowerAsset/Flower 01.png" alt="" class=" h-[100%]">
+      <img src="FlowerAsset/Rectangle 4.png" alt="" class=" h-[100%]" >
+      <img src="FlowerAsset/Rectangle 5.png" alt="" class=" h-[100%]">
+      <img src="FlowerAsset/Rectangle 6.png" alt="" class=" h-[100%]">
+    </div>
+  </div> 
+  <!-- last -->
+  <div class=" lg:h-[23.4vw] lg:w-[75vw] bg-[url('FlowerAsset/Rectangle9.png')] bg-cover lg:bg-center 
+  flex flex-col justify-center items-center text-center mx-auto lg:my-[6.67vw] my-14 gap-[max(2.5vw,36px)] lg:p-0 p-16">
+    <div class="">
+      <h1 class="text-[clamp(28px,2.1vw,40px)] text-black font-[800]">Get The Latest Deals</h1>
+      <p class="text-[clamp(10px,0.94vw,18px)]">$30 coupon for first shopping</p>
+    </div>
+    <!-- email -->
+    <div class="flex flex-col lg:flex-row items-center lg:gap-2 gap-10">
+      <input type="email" placeholder="Enter your email..." 
+             class=" input input-bordered lg:w-[36.5vw] w-[75vw] h-[max(3.4vw,36px)] bg-white text-black rounded-md px-4 p-0 border-0">
+      <button class="btn bg-dpink text-white border-0 text-[clamp(12px,1.042vw,20px)] w-[max(9.22vw,100px)] h-[max(3.4vw,36px)] p-0 leading-none">
+        Subscribe
+      </button>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer class=" w-full lg:h-[23.4vw] bg-black flex justify-center items-center lg:p-0 p-10">
+    <div class="text-center lg:w-[32.6vw] w-[65vw] flex flex-col gap-[max(2.2vw,28px)]">
+      <div class=" flex flex-col gap-[1.25vw]">
+        <h1 class="text-white text-[clamp(28px,2.1vw,40px)] font-[800]"><span class=" text-[#E55473] ">Flower</span>Shop</h1>
+        <p class="text-[clamp(10px,0.94vw,18px)] text-white">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+      </div>
+      <p class="text-[clamp(10px,0.88vw,16px)]">@2020-2023, FlowerShop.com. All rights reserved.</p>
+    </div>
+  </footer> 
+</body>
+</html>
